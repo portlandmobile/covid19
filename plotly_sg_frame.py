@@ -81,7 +81,7 @@ for i in pd.date_range(start_date, datetime.date.today()-datetime.timedelta(days
     df['data']=df_data2['cases']
     df=df.fillna(axis=1, value='0')
     convertedDate = i.to_pydatetime()
-    appendFrame={'name' : count, 'layout' : {'title_text':".                      "+convertedDate.strftime('%Y-%m-%d')},
+    appendFrame={'name' : count, 'layout' : {'title_text':convertedDate.strftime('%Y-%m-%d'), 'title_x':0.5},
          'data': [
              {'type': 'scattergeo', 
               'locationmode' : 'USA-states',
