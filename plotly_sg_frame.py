@@ -108,7 +108,13 @@ fig.update_layout(
         'y':0.9,
         'x':0.5,
         'xanchor': 'center',
-        'yanchor': 'top'})
+        'yanchor': 'top',
+        'font':dict(
+            family="Courier New, monospace",
+            size=40,
+            color="#7f7f7f"
+    )      }
+        )
 
 #Make the date dynamically as the time serious
 fig.add_trace(go.Scattergeo(
