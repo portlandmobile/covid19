@@ -103,6 +103,13 @@ for i in pd.date_range(start_date, datetime.date.today()-datetime.timedelta(days
 
 fig = go.Figure(fig_dict)
 
+fig.update_layout(
+    title={
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'})
+
 #Make the date dynamically as the time serious
 fig.add_trace(go.Scattergeo(
         lon = df['lon'],
