@@ -41,7 +41,7 @@ for i in range(len(limits)):
     df_sub = df[lim[0]:lim[1]]
 fig_dict = dict(
     layout = dict(
-        title_text = 'US States Blah Blah<br>(Click legend to toggle traces)',
+        title_text = '',
         showlegend = True,
         geo = dict(
             scope = 'usa',
